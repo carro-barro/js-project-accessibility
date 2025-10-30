@@ -7,6 +7,19 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   />
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  >
   <title>Title</title>
   <link
     rel="stylesheet"
@@ -16,11 +29,19 @@
 
 <body>
   <header>
-    <img
-      src=""
-      alt="logo"
-    >
-    <p>The Reading Room</p>
+    <div class="logo-container">
+      <!-- <img
+        src=""
+        alt="logo"
+      > -->
+      <!-- only til we find a good logo -->
+      <ion-icon
+        class="logo"
+        name="book-outline"
+        size="large"
+      ></ion-icon>
+      <p>The Reading Room</p>
+    </div>
     <nav>
       <ul>
         <li>
@@ -29,7 +50,10 @@
         <li>
           <a href="#About us">About Us</a>
         </li>
-        <li> <a href="#Join now "> Join Now</a> </li>
+        <li> <button
+            class="nav-button"
+            href="#Join now "
+          > Join Now</button> </li>
       </ul>
     </nav>
   </header>
@@ -37,22 +61,27 @@
     <section>
       <hero>
         <img
+          class="hero-img"
           src="./img/books-hero-image.jpg"
           alt=""
         >
-        <p>Read. Connect. Enjoy.</p>
-        <h1>Reading Room</h1>
-        <p>Welcome to The Reading Room, your cozy escape into the world of books! We're a community of passionate
-          readers who dive into captivating stories, exchange thoughtful insights, and celebrate the magic of reading
-          together. There's always a new adventure waiting on the next page!</p>
-        <button
-          class="main-button"
-          id="join-now"
-        >Join now</button>
-        <button
-          class="secondary-button"
-          id="learn-more"
-        >Learn more</button>
+        <div class="hero-text">
+          <p class="motto-text">Read. Connect. Enjoy.</p>
+          <h1>Reading Room</h1>
+          <p>Welcome to The Reading Room, your cozy escape into the world of books! We're a community of passionate
+            readers who dive into captivating stories, exchange thoughtful insights, and celebrate the magic of reading
+            together. There's always a new adventure waiting on the next page!</p>
+          <div class="hero-buttons">
+            <button
+              class="main-button"
+              id="join-now"
+            >Join now</button>
+            <button
+              class="secondary-button"
+              id="learn-more"
+            >Learn more about us</button>
+          </div>
+        </div>
       </hero>
     </section>
 

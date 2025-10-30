@@ -40,6 +40,7 @@ Todo:
 - start working on the html when agnes can join us, mob programming
 - divide work into branches
 - connect all the buttons and nav links when we have made the other pages
+- change the "learn more" buttons to more accessable, ex. "learn more about us"
 
 figma design: https://www.figma.com/design/VlIardtfAHonAj548mu02m/Accessibility-Project-Team-6?node-id=1-69&t=SscyLpzIZVLcaj5J-0
 password: 1234
