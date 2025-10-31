@@ -1,5 +1,3 @@
-body {}
-
 * {
   box-sizing: border-box;
 }
@@ -8,6 +6,7 @@ body {}
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 50px;
 }
 
 /* #user-info-form {
@@ -28,10 +27,10 @@ body {}
 }
 
 h1 {
-  background: lightgrey;
   font-size: 25px;
   padding: 5px;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .become-member p {
@@ -40,6 +39,7 @@ h1 {
 
 h2 {
   font-size: 20px;
+  font-family: "Lato", sans-serif;
 }
 
 .form {
@@ -48,6 +48,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .form input {
@@ -56,10 +57,12 @@ h2 {
   padding: 6px;
   width: 400px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 h3 {
   font-size: 15px;
+  font-family: "Lato", sans-serif;
 }
 
 fieldset {
@@ -69,7 +72,7 @@ fieldset {
 
 
 .join {
-  background: rgb(14, 14, 104);
+  background: #427A76;
   color: white;
   width: 300px;
   padding: 8px;

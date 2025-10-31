@@ -9,27 +9,57 @@
   >
   <title>Join now</title>
   <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link
     rel="stylesheet"
     href="css/formstyles.css"
   />
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  />
+
 </head>
 
 <body>
   <header>
-    <img
-      src=""
-      alt="logo"
-    >
-    <p>The Reading Room</p>
+    <div class="logo-container">
+      <!-- <img
+        src=""
+        alt="logo"
+      > -->
+      <!-- only til we find a good logo -->
+      <ion-icon
+        class="logo"
+        name="book-outline"
+        size="large"
+      ></ion-icon>
+      <p>The Reading Room</p>
+    </div>
     <nav>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
           <a href="#About us">About Us</a>
         </li>
-        <li> <a href="form.html"> Join Now</a> </li>
+        <li> <a
+            class="nav-button"
+            href="./form.html"
+          > Join Now</a> </li>
       </ul>
     </nav>
   </header>
@@ -131,23 +161,38 @@
 
 
   <footer>
-    <div>
-      <img
-        src=""
-        alt="logo"
-      >
-      <h4> Contact </h4>
+    <img
+      src="./img/1_white.png"
+      alt="logo"
+      id="logoFooter"
+    />
+    <div class="foot-contacts">
+      <h4>Contact</h4>
       <p>City</p>
       <p>Street 123</p>
       <p><a href="tel:+4733378901">+47 333 78 901</a></p>
       <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
     </div>
-    <div>
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-tiktok"></ion-icon>
-      <ion-icon name="logo-instagram"></ion-icon>
+    <div class="foot-soc-media">
+      <ion-icon
+        class="foot-icon"
+        name="logo-facebook"
+      ><a href="#"></a></ion-icon>
+
+      <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
+
+      <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
     </div>
   </footer>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
   <script src="js/main.js"></script>
 </body>
 
