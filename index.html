@@ -13,39 +13,64 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
-    <header>
-      <img src="" alt="logo" />
+<body>
+  <header>
+    <div class="logo-container">
+      <!-- <img
+        src=""
+        alt="logo"
+      > -->
+      <!-- only til we find a good logo -->
+      <ion-icon
+        class="logo"
+        name="book-outline"
+        size="large"
+      ></ion-icon>
       <p>The Reading Room</p>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="#About us">About Us</a>
-          </li>
-          <li><a href="form.html"> Join Now</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main id="main-content">
-      <section>
-        <hero>
-          <img src="./img/books-hero-image.jpg" alt="" />
-          <p>Read. Connect. Enjoy.</p>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#Home">Home</a>
+        </li>
+        <li>
+          <a href="#About us">About Us</a>
+        </li>
+        <li> <button
+            class="nav-button"
+            href="form.html"
+          > Join Now</button> </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section>
+      <hero>
+        <img
+          class="hero-img"
+          src="./img/books-hero-image.jpg"
+          alt=""
+        >
+        <div class="hero-text">
+          <p class="motto-text">Read. Connect. Enjoy.</p>
           <h1>Reading Room</h1>
-          <p>
-            Welcome to The Reading Room, your cozy escape into the world of
-            books! We're a community of passionate readers who dive into
-            captivating stories, exchange thoughtful insights, and celebrate the
-            magic of reading together. There's always a new adventure waiting on
-            the next page!
-          </p>
-          <button class="main-button" id="join-now">Join now</button>
-          <button class="secondary-button" id="learn-more">Learn more</button>
-        </hero>
-      </section>
+          <p>Welcome to The Reading Room, your cozy escape into the world of books! We're a community of passionate
+            readers who dive into captivating stories, exchange thoughtful insights, and celebrate the magic of reading
+            together. There's always a new adventure waiting on the next page!</p>
+          <div class="hero-buttons">
+            <button
+              class="main-button"
+              id="join-now"
+            >Join now</button>
+            <button
+              class="secondary-button"
+              id="learn-more"
+            >Learn more about us</button>
+          </div>
+        </div>
+      </hero>
+    </section>
+
 
       <section class="main-books">
         <article class="about-text">
