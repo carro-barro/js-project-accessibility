@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Join now</title>
+  <link
+    rel="stylesheet"
+    href="css/formstyles.css"
+  />
+</head>
+
+<body>
+  <header>
+    <img
+      src=""
+      alt="logo"
+    >
+    <p>The Reading Room</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#About us">About Us</a>
+        </li>
+        <li> <a href="form.html"> Join Now</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <section id="main-form">
+      <div class="become-member">
+        <h1> BECOME A BOOK CLUB MEMBER </h1>
+        <p> Join the club now to get monthly book <br> recommendations based on you favorite genre! </p>
+      </div>
+      <section id="form-info">
+        <h2> Add your info below </h2>
+        <!-- user-info-form + feedback-form -->
+        <form id="user-info-form">
+          <div class="form">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+              aria-required="true"
+            />
+          </div>
+
+          <h3> Choose your favorite genre:</h3>
+          <fieldset>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="genre"
+                id="fantasy"
+                value="genre-fantasy"
+              />
+              <label for="fantasy">Fantasy</label>
+
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="genre"
+                id="novel"
+                value="genre-novel"
+              />
+              <label for="novel">Novel</label>
+
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="genre"
+                id="thriller"
+                value="genre-thriller"
+              />
+              <label for="thriller">Thriller</label>
+
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="genre"
+                id="all"
+                value="genre-all"
+              />
+              <label for="all">All</label>
+            </div>
+          </fieldset>
+
+          <button
+            type="submit"
+            v
+            class="join"
+          >Join now</button>
+
+        </form>
+      </section>
+  </div>
+  <!-- result -->
+  <section
+    id="application"
+    hidden
+  >
+    <h2>Welcome to the Reading Room</h2>
+    <!-- result-content -->
+    <div id="application-note">
+      ></div>
+  </section>
+
+
+
+  <footer>
+    <div>
+      <img
+        src=""
+        alt="logo"
+      >
+      <h4> Contact </h4>
+      <p>City</p>
+      <p>Street 123</p>
+      <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+      <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
+    </div>
+    <div>
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-tiktok"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
