@@ -27,6 +27,16 @@ Your website must include:
 - Instant Feedback – Display correct/incorrect answers without page reload.
 - Logical Focus Management – Ensure a clear tab order and focus indicators.
 
+All Grade G requirements plus the implementation of a minimum of 1 stretch goals:
+
+Stretch Goal Options:
+
+Implement modal with trapped focus and close on escape functionality
+Implement “Reduced motion support” and add toggle to turn it on or off
+Implement “High contrast mode” with toggle to turn it on and off
+Implement “Text customization” with settings to change font size and line height
+Implement loading indicators with ARIA attributes
+
 
 Structure
 Header & Navigation
