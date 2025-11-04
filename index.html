@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -30,17 +30,14 @@
 <body>
   <header>
     <div class="logo-container">
-      <!-- <img
-        src=""
-        alt="logo"
-      > -->
-      <!-- only til we find a good logo -->
-      <ion-icon
-        class="logo"
-        name="book-outline"
-        size="large"
-      ></ion-icon>
-      <p>The Reading Room</p>
+      <a href="index.html">
+        <ion-icon
+          class="logo"
+          name="book-outline"
+          size="large"
+          aria-label="Website logotype, press to go to the Home page"
+        ></ion-icon>The Reading Room
+      </a>
     </div>
     <!-- mobile navigation -->
     <nav class="nav-mobile">
@@ -49,6 +46,7 @@
         class="hamburger"
         aria-expanded="false"
         aria-label="Menu"
+        aria-controls="hamburger-menu"
       >
         <img
           src="./img/menu-burger-horizontal-svgrepo-com.svg"
@@ -58,13 +56,17 @@
       </button>
     </nav>
     <!-- desktop navigation -->
-    <nav class="nav-desktop">
+    <nav
+      class="nav-desktop"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <ul>
         <li>
           <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="#About us">About Us</a>
+          <a href="./about.html">About Us</a>
         </li>
         <li> <a
             class="nav-button"
@@ -88,14 +90,17 @@
             readers who dive into captivating stories, exchange thoughtful insights, and celebrate the magic of reading
             together. There's always a new adventure waiting on the next page!</p>
           <div class="hero-buttons">
-            <button
+            <a
+              href="./form.html"
               class="main-button"
               id="join-now"
-            >Join now</button>
-            <button
+              aria-label="click to go to sign up page"
+            >Join now</a>
+            <a
+              href="about.html"
               class="secondary-button"
               id="learn-more"
-            >Learn more about us</button>
+            >Learn more about us</a>
           </div>
         </div>
       </hero>
@@ -112,34 +117,37 @@
         </p>
       </article>
 
-      <div class="about-books">
-        <article>
+      <div
+        class="about-books"
+        role="list"
+      >
+        <article role="listitem">
           <img
             class="book-cover"
             src="./img/book-cover-1.jpg"
-            alt=""
+            alt="book cover: Harry Potter and they Deathly Hallows by JK Rowling"
           />
           <h3>Harry Potter and they Deathly Hallows by JK Rowling</h3>
           <button class="listen-button">Listen Now</button>
           <button class="read-button">Read Online</button>
         </article>
 
-        <article>
+        <article role="listitem">
           <img
             class="book-cover"
             src="./img/book-cover-2.jpeg"
-            alt=""
+            alt="book cover: The Imperfections of Memory by Angelina Aludo"
           />
           <h3>The Imperfections of Memory by Angelina Aludo</h3>
           <button class="listen-button">Listen Now</button>
           <button class="read-button">Read Online</button>
         </article>
 
-        <article>
+        <article role="listitem">
           <img
             class="book-cover"
             src="./img/book-cover-3.jpeg"
-            alt=""
+            alt="book cover: Beyond the ocean door by Amisha Sathi "
           />
           <h3>Beyond the ocean door by Amisha Sathi</h3>
           <button class="listen-button">Listen Now</button>
@@ -159,7 +167,7 @@
       <h4>Contact</h4>
       <p>City</p>
       <p>Street 123</p>
-      <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+      <a href="tel:+4733378901">+47 333 78 901</a>
       <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
     </div>
     <div class="foot-soc-media">
