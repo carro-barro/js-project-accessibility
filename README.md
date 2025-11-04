@@ -27,6 +27,16 @@ Your website must include:
 - Instant Feedback – Display correct/incorrect answers without page reload.
 - Logical Focus Management – Ensure a clear tab order and focus indicators.
 
+All Grade G requirements plus the implementation of a minimum of 1 stretch goals:
+
+Stretch Goal Options:
+
+Implement modal with trapped focus and close on escape functionality
+Implement “Reduced motion support” and add toggle to turn it on or off
+Implement “High contrast mode” with toggle to turn it on and off
+Implement “Text customization” with settings to change font size and line height
+Implement loading indicators with ARIA attributes
+
 
 Structure
 Header & Navigation
@@ -42,6 +52,12 @@ Todo:
 - connect all the buttons and nav links when we have made the other pages
 - change the "learn more" buttons to more accessable, ex. "learn more about us"
 
+- add a "skip to content" link for screen readers
+- "Use :focus-visible for clear focus indicators."
+
+stuff to fix: 
+- need a legend in the form
+
 figma design: https://www.figma.com/design/VlIardtfAHonAj548mu02m/Accessibility-Project-Team-6?node-id=1-69&t=SscyLpzIZVLcaj5J-0
 password: 1234
 
@@ -50,3 +66,5 @@ text content:
 - hero: Welcome to The Reading Room, your cozy escape into the world of books! We’re a community of passionate readers who dive into captivating stories, exchange thoughtful insights, and celebrate the magic of reading together. There’s always a new adventure waiting on the next page!
 
 - "our books" section: Flexibility meets storytelling. Explore a wide range of titles you can read or listen to online, anytime and on any device. Discover a smarter, simpler way to enjoy great books.
+
+Carolina ideas: add a hamburger menu, look at accessibility tools, divide styling into diffrent files ex. "header styling", julia can do "footer styling", also "homepage styling"(for the rest of the styling on the main page)
