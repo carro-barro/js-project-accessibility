@@ -1,188 +1,144 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Reading Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Title</title>
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="css/styles.css"
-  />
-</head>
-
-<body>
-  <header>
-    <div class="logo-container">
-      <!-- <img
+  <body>
+    <header>
+      <div class="logo-container">
+        <!-- <img
         src=""
         alt="logo"
       > -->
-      <!-- only til we find a good logo -->
-      <ion-icon
-        class="logo"
-        name="book-outline"
-        size="large"
-      ></ion-icon>
-      <p>The Reading Room</p>
-    </div>
-    <!-- mobile navigation -->
-    <nav class="nav-mobile">
-      <button
-        id="hamburger"
-        class="hamburger"
-        aria-expanded="false"
-        aria-label="Menu"
-      >
-        <img
-          src="./img/menu-burger-horizontal-svgrepo-com.svg"
-          alt=""
-          aria-hidden="true"
-        >
-      </button>
-    </nav>
-    <!-- desktop navigation -->
-    <nav class="nav-desktop">
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="#About us">About Us</a>
-        </li>
-        <li> <a
-            class="nav-button"
-            href="./form.html"
-          > Join Now</a> </li>
-      </ul>
-    </nav>
-  </header>
-  <main id="main-content">
-    <section>
-      <hero>
-        <img
-          class="hero-img"
-          src="./img/books-hero-image.jpg"
-          alt=""
-        >
-        <div class="hero-text">
-          <p class="motto-text">Read. Connect. Enjoy.</p>
-          <h1>Reading Room</h1>
-          <p>Welcome to The Reading Room, your cozy escape into the world of books! We're a community of passionate
-            readers who dive into captivating stories, exchange thoughtful insights, and celebrate the magic of reading
-            together. There's always a new adventure waiting on the next page!</p>
-          <div class="hero-buttons">
-            <button
-              class="main-button"
-              id="join-now"
-            >Join now</button>
-            <button
-              class="secondary-button"
-              id="learn-more"
-            >Learn more about us</button>
-          </div>
-        </div>
-      </hero>
-    </section>
-
-
-    <section class="main-books">
-      <article class="about-text">
-        <h2>Our Books</h2>
-        <p>
-          Flexibility meets storytelling. Explore a wide range of titles you
-          can read or listen to online, anytime and on any device. Discover a
-          smarter, simpler way to enjoy great books.
-        </p>
-      </article>
-
-      <div class="about-books">
-        <article>
-          <img
-            class="book-cover"
-            src="./img/book-cover-1.jpg"
-            alt=""
-          />
-          <h3>Harry Potter and they Deathly Hallows by JK Rowling</h3>
-          <button class="listen-button">Listen Now</button>
-          <button class="read-button">Read Online</button>
-        </article>
-
-        <article>
-          <img
-            class="book-cover"
-            src="./img/book-cover-2.jpeg"
-            alt=""
-          />
-          <h3>The Imperfections of Memory by Angelina Aludo</h3>
-          <button class="listen-button">Listen Now</button>
-          <button class="read-button">Read Online</button>
-        </article>
-
-        <article>
-          <img
-            class="book-cover"
-            src="./img/book-cover-3.jpeg"
-            alt=""
-          />
-          <h3>Beyond the ocean door by Amisha Sathi</h3>
-          <button class="listen-button">Listen Now</button>
-          <button class="read-button">Read Online</button>
-        </article>
+        <!-- only til we find a good logo -->
+        <ion-icon class="logo" name="book-outline" size="large"></ion-icon>
+        <p>The Reading Room</p>
       </div>
-    </section>
-  </main>
+      <!-- mobile navigation -->
+      <nav class="nav-mobile">
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-expanded="false"
+          aria-label="Menu"
+        >
+          <img
+            src="./img/menu-burger-horizontal-svgrepo-com.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+      </nav>
+      <!-- desktop navigation -->
+      <nav class="nav-desktop">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#About us">About Us</a>
+          </li>
+          <li><a class="nav-button" href="./form.html"> Join Now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section>
+        <hero>
+          <img class="hero-img" src="./img/books-hero-image.jpg" alt="" />
+          <div class="hero-text">
+            <p class="motto-text">Read. Connect. Enjoy.</p>
+            <h1>Reading Room</h1>
+            <p>
+              Welcome to The Reading Room, your cozy escape into the world of
+              books! We're a community of passionate readers who dive into
+              captivating stories, exchange thoughtful insights, and celebrate
+              the magic of reading together. There's always a new adventure
+              waiting on the next page!
+            </p>
+            <div class="hero-buttons">
+              <button class="main-button" id="join-now">Join now</button>
+              <button class="secondary-button" id="learn-more">
+                Learn more about us
+              </button>
+            </div>
+          </div>
+        </hero>
+      </section>
 
-  <footer>
-    <img
-      src="./img/1_white.png"
-      alt="logo"
-      id="logoFooter"
-    />
-    <div class="foot-contacts">
-      <h4>Contact</h4>
-      <p>City</p>
-      <p>Street 123</p>
-      <p><a href="tel:+4733378901">+47 333 78 901</a></p>
-      <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
-    </div>
-    <div class="foot-soc-media">
-      <ion-icon
-        class="foot-icon"
-        name="logo-facebook"
-      ><a href="#"></a></ion-icon>
+      <section class="main-books">
+        <article class="about-text">
+          <h2>Our Books</h2>
+          <p>
+            Flexibility meets storytelling. Explore a wide range of titles you
+            can read or listen to online, anytime and on any device. Discover a
+            smarter, simpler way to enjoy great books.
+          </p>
+        </article>
 
-      <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
+        <div class="about-books">
+          <article>
+            <img class="book-cover" src="./img/book-cover-1.jpg" alt="" />
+            <h3>Harry Potter and they Deathly Hallows by JK Rowling</h3>
+            <button class="listen-button">Listen Now</button>
+            <button class="read-button">Read Online</button>
+          </article>
 
-      <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
-    </div>
-  </footer>
+          <article>
+            <img class="book-cover" src="./img/book-cover-2.jpeg" alt="" />
+            <h3>The Imperfections of Memory by Angelina Aludo</h3>
+            <button class="listen-button">Listen Now</button>
+            <button class="read-button">Read Online</button>
+          </article>
 
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
-  <script src="js/main.js"></script>
-</body>
+          <article>
+            <img class="book-cover" src="./img/book-cover-3.jpeg" alt="" />
+            <h3>Beyond the ocean door by Amisha Sathi</h3>
+            <button class="listen-button">Listen Now</button>
+            <button class="read-button">Read Online</button>
+          </article>
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <img src="./img/1_white.png" alt="logo" id="logoFooter" />
+      <div class="foot-contacts">
+        <h4>Contact</h4>
+        <p>City</p>
+        <p>Street 123</p>
+        <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+        <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
+      </div>
+      <div class="foot-soc-media">
+        <ion-icon class="foot-icon" name="logo-facebook"
+          ><a href="#"></a
+        ></ion-icon>
+
+        <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
+
+        <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,14 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #222;
+  margin: 0;
+  text-decoration: none;
+}
+
+.about-people {
+  display: flex;
+  gap: 1rem;
+  width: 100vw;
+  margin: 24px auto;
+  padding: 0;
+}
