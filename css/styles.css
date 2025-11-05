@@ -35,11 +35,33 @@
    padding: 7px;
  }
 
+ .nav-mobile ul {
+   background: #F5E5E1;
+   width: 100%;
+
+ }
+
+ .nav-mobile span {
+   font-size: 16px;
+   display: flex;
+   flex-direction: column;
+ }
+
  .nav-mobile img {
    width: 45px;
    height: auto;
  }
 
+ #hamMenuList {
+   display: none;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+ }
+
+ #hamMenuList.show {
+   display: block;
+   opacity: 1;
+ }
 
  @media (max-width: 576px) {
    header {
