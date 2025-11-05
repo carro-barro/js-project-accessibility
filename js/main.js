@@ -65,6 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.setAttribute("aria-expanded", String(!expanded))
     hamMenuList.setAttribute("aria-hidden", expanded ? "true" : "false")
     hamMenuList.classList.toggle("show", !expanded)
+
+    hamburger.classList.toggle("active", !expanded)
   })
 
   const hamMenuItems = document.querySelectorAll(".menu-item")
@@ -73,6 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.setAttribute("aria-expanded", "false")
       hamMenuList.setAttribute("aria-hidden", "true")
       hamMenuItems.classList.remove("show")
+
+      hamburger.classList.remove("active")
     })
   })
 
@@ -81,6 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.setAttribute("aria-expanded", "false")
       hamMenuList.setAttribute("aria-hidden", "true")
       hamMenuItems.classList.remove("show")
+      hamburger.focus()
+
+      hamburger.classList.remove("active")
       hamburger.focus()
     }
   })
