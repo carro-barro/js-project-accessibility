@@ -4,6 +4,17 @@
    margin: 0;
  }
 
+ .skip-link {
+   position: absolute;
+   left: -999px;
+ }
+
+ .skip-link:focus {
+   left: 0;
+   background: white;
+   padding: 1rem;
+   border: 2px solid black;
+ }
 
  header {
    display: flex;
