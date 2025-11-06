@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  margin-top: 70px;
+}
+
+/* navbar will be styled tuesday*/
+#main-form {
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+}
+
 h1 {
   font-size: 28px;
   padding: 5px;
@@ -23,29 +42,32 @@ h2 {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   color: #174143;
-  margin-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .label-input {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: #174143;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 .form {
   flex-direction: column;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  margin-left: 10px;
 }
 
 .form input {
   border-radius: 10px;
   border: 1px solid lightgrey;
-  padding: 6px;
+  padding: 7px;
   width: 90%;
-  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .title {
@@ -53,15 +75,15 @@ h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: #174143;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 40;
+  margin-bottom: 15px;
 }
 
 fieldset {
   border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 35px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   color: #174143;
 }
 
@@ -72,20 +94,39 @@ fieldset {
   padding: 8px;
   border-radius: 12px;
   display: block;
-  margin: 0px auto 30px auto;
+  margin: 0px auto 20px auto;
   border: none;
+  transition: transform 0.2s ease;
+}
+
+.join:focus,
+.join:active {
+  transform: scale(1.05);
 }
 
 .radio-group {
   margin-bottom: 10px;
+
 }
 
 #application {
   max-width: 500px;
   margin: 50px auto;
   padding: 10px 30px 40px 30px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #DCDCDC;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/*error message*/
+input[aria-invalid="true"] {
+  border: 1px solid rgb(198, 6, 6);
+  outline: none;
+}
+
+.error-message {
+  color: rgb(198, 6, 6);
+  font-size: 14px;
+  margin-top: 4px;
 }
