@@ -15,7 +15,7 @@
 
   <body>
     <header>
-      <!-- <nav></nav> -->
+      <!-- Main heading -->
       <h1>
         About the team behind
         <span style="font-weight: 800">The Reading Room</span>
@@ -23,7 +23,12 @@
     </header>
 
     <main id="about-main-content">
-      <div id="accordion" class="about-text-general">
+      <div
+        id="accordion"
+        class="about-text-general"
+        role="region"
+        aria-label="About the team behind The Reading Room Club"
+      >
         <p>
           At The Reading Room, our team is made up of book lovers, discussion
           starters, and lifelong learners who believe that stories bring people
@@ -35,7 +40,7 @@
             Read more
           </button>
         </p>
-        <div id="content-1" class="accordion-content" hidden>
+        <div id="content-1" class="accordion-content" hidden role="region">
           <p>
             We're dedicated to creating a welcoming space where every reader can
             share ideas, discover new voices, and feel part of a vibrant
@@ -60,7 +65,12 @@
               Read more
             </button>
           </p>
-          <div id="agnes-content" class="accordion-content" hidden>
+          <div
+            id="agnes-content"
+            class="accordion-content"
+            hidden
+            role="region"
+          >
             <p>
               With her love for planning and community, she turned quiet reading
               nights into friendly gatherings where every voice is heard.
@@ -83,7 +93,12 @@
             </button>
           </p>
           <div>
-            <p id="carolina-content" class="accordion-content" hidden>
+            <p
+              id="carolina-content"
+              class="accordion-content"
+              hidden
+              role="region"
+            >
               and never stops searching for hidden literary treasures. Her
               favorite part? Seeing how the same story sparks completely
               different emotions in everyone.
@@ -105,7 +120,12 @@
               Read more
             </button>
           </p>
-          <div id="frida-content" class="accordion-content" hidden>
+          <div
+            id="frida-content"
+            class="accordion-content"
+            hidden
+            role="region"
+          >
             <p>
               — a digital extension of the cozy corner where the group first
               met. She believes that good design can make reading feel even more
@@ -128,7 +148,12 @@
               Read more
             </button>
           </p>
-          <div id="julia-content" class="accordion-content" hidden>
+          <div
+            id="julia-content"
+            class="accordion-content"
+            hidden
+            role="region"
+          >
             <p>
               For her, The Reading Room isn't just about books — it's about the
               people who share them.
@@ -137,6 +162,25 @@
         </article>
       </section>
     </main>
+    <footer>
+      <img src="./img/1_white.png" alt="logo" id="logoFooter" />
+      <div class="foot-contacts">
+        <h4>Contact</h4>
+        <p>City</p>
+        <p>Street 123</p>
+        <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+        <p>
+          <a href="mailto:email@gmail.community">email@gmail.community</a>
+        </p>
+      </div>
+      <div class="foot-soc-media">
+        <ion-icon class="foot-icon" name="logo-facebook"
+          ><a href="#"></a
+        ></ion-icon>
+        <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
+        <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
+      </div>
+    </footer>
     <script src="js/about.js"></script>
   </body>
 </html>
