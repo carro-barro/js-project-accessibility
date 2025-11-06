@@ -44,7 +44,10 @@
       <p>The Reading Room</p>
     </div>
     <!-- mobile navigation -->
-    <nav class="nav-mobile">
+    <nav
+      class="nav-mobile"
+      aria-label="Mobile Navigation"
+    >
       <button
         id="hamburger"
         class="hamburger"
@@ -59,7 +62,10 @@
       </button>
     </nav>
     <!-- desktop navigation -->
-    <nav class="nav-desktop">
+    <nav
+      class="nav-desktop"
+      aria-label="Main Navigation"
+    >
       <ul>
         <li>
           <a href="./index.html">Home</a>
@@ -91,26 +97,39 @@
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
-              required
+              placeholder="Add your name here"
               aria-required="true"
             />
+            <div
+              id="name-error"
+              class="error-message"
+              role="alert"
+              hidden
+            >Enter your name</div>
           </div>
           <div class="form">
-            <label>Email:</label>
+            <label class="label-input">Email:</label>
             <input
-              type="email"
+              type="text"
               id="email"
               name="email"
-              placeholder="Email"
-              required
+              placeholder="Add your Email address here"
               aria-required="true"
             />
+            <div
+              id="email-error"
+              class="error-message"
+              role="alert"
+              hidden
+            >Enter your email address</div>
           </div>
 
           <fieldset>
             <legend class="title"> Choose your favorite genre:</legend>
-            <div class="radio-group">
+            <div
+              class="radio-group"
+              aria-label="choose your favorite genre"
+            >
               <input
                 type="radio"
                 name="genre"
@@ -118,8 +137,8 @@
                 value="genre-fantasy"
               />
               <label for="fantasy">Fantasy</label>
-
             </div>
+
             <div class="radio-group">
               <input
                 type="radio"
@@ -153,7 +172,6 @@
 
           <button
             type="submit"
-            v
             class="join"
           >Join now</button>
 
@@ -167,8 +185,18 @@
   >
     <h2>Welcome to the Reading Room</h2>
     <!-- result-content -->
-    <div id="application-note">
-      ></div>
+    <div
+      id="application-note"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+    <div
+      id="announcer"
+      class="visually-hidden"
+      role="status"
+      aria-live="polite"
+    ></div>
   </section>
 
 
@@ -206,7 +234,7 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
-  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
