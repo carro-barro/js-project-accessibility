@@ -151,24 +151,25 @@
             </div>
             <div class="radio-group">
               <input
-                type="radio"
-                name="genre"
-                id="thriller"
-                value="genre-thriller"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+                aria-required="true"
               />
-              <label for="thriller">Thriller</label>
-
             </div>
-            <div class="radio-group">
+            <div class="form">
+              <label>Email:</label>
               <input
-                type="radio"
-                name="genre"
-                id="all"
-                value="genre-all"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+                aria-required="true"
               />
-              <label for="all">All</label>
             </div>
-          </fieldset>
 
           <button
             type="submit"
@@ -214,17 +215,26 @@
       <p><a href="tel:+4733378901">+47 333 78 901</a></p>
       <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
     </div>
-    <div class="foot-soc-media">
-      <ion-icon
-        class="foot-icon"
-        name="logo-facebook"
-      ><a href="#"></a></ion-icon>
+    <!-- result -->
+    <section id="application" hidden>
+      <h2>Welcome to the Reading Room</h2>
+      <!-- result-content -->
+      <div id="application-note"></div>
+    </section>
 
-      <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
-
-      <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
-    </div>
-  </footer>
+    <footer>
+      <img src="./img/1_white.png" alt="logo" id="logoFooter" />
+      <div class="foot-contacts">
+        <h4>Contact</h4>
+        <p>City</p>
+        <p>Street 123</p>
+        <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+        <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
+      </div>
+      <div class="foot-soc-media">
+        <ion-icon class="foot-icon" name="logo-facebook"
+          ><a href="#"></a
+        ></ion-icon>
 
   <script
     type="module"
@@ -237,4 +247,18 @@
   <script src="js/form.js"></script>
 </body>
 
+        <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
