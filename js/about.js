@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const buttonAccordion = document.querySelectorAll(".accordion-button");
 
+  if (!accordion) return;
+
   buttonAccordion.forEach((button, index) => {
     const targetId = button.getAttribute("aria-controls");
     const targetPanel = document.getElementById(targetId);

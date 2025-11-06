@@ -17,7 +17,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   padding: 15px;
 }
 
@@ -90,11 +90,11 @@ fieldset {
 .join {
   background: #427a76;
   color: white;
-  width: 300px;
+  width: 80%;
   padding: 8px;
   border-radius: 12px;
   display: block;
-  margin: 0px auto 20px auto;
+  margin: 40px auto 20px auto;
   border: none;
   transition: transform 0.2s ease;
 }
