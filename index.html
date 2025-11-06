@@ -13,29 +13,96 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <header>
-      <div class="logo-container">
-        <a href="index.html">
-          <ion-icon
-            class="logo"
-            name="book-outline"
-            size="large"
-            aria-hidden="true"
-          ></ion-icon>
-          The Reading Room
-        </a>
-      </div>
-      <!-- mobile navigation -->
-      <nav class="nav-mobile">
-        <button
-          id="hamburger"
-          class="hamburger"
-          aria-expanded="false"
-          aria-label="Menu"
-          aria-controls="hamburger-menu"
+<body>
+  <a
+    class="skip-link"
+    href="#main-content"
+  >Skip to content</a>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <ion-icon
+          class="logo"
+          name="book-outline"
+          size="large"
+          aria-label="Website logotype, press to go to the Home page"
+        ></ion-icon>The Reading Room
+      </a>
+    </div>
+    <!-- mobile navigation -->
+    <nav
+      class="nav-mobile"
+      id="hamMenu"
+    >
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-expanded="false"
+        aria-label="Main menu"
+        aria-controls="hamburger-menu"
+      >
+        <p>Menu</p>
+        <!-- <img
+          src="./img/menu-burger-horizontal-svgrepo-com.svg"
+          alt=""
+          aria-hidden="true"
+        > -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul
+        class="ham-menu-list"
+        id="hamMenuList"
+        role="menu"
+        aria-label="Main navigation"
+        aria-hidden="true"
+      >
+        <li>
+          <a
+            class="menu-item"
+            href="./index.html"
+          >Home</a>
+        </li>
+        <li>
+          <a
+            class="menu-item"
+            href="./about.html"
+          >About Us</a>
+        </li>
+        <li> <a
+            class="menu-item nav-button"
+            href="./form.html"
+          > Join Now</a> </li>
+      </ul>
+    </nav>
+    <!-- desktop navigation -->
+    <nav
+      class="nav-desktop"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./about.html">About Us</a>
+        </li>
+        <li> <a
+            class="nav-button"
+            href="./form.html"
+          > Join Now</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section>
+      <hero>
+        <img
+          class="hero-img"
+          src="./img/books-hero-image.jpg"
+          alt=""
         >
           <img
             src="./img/menu-burger-horizontal-svgrepo-com.svg"
