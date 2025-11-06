@@ -44,20 +44,51 @@
       </a>
     </div>
     <!-- mobile navigation -->
-    <nav class="nav-mobile">
+    <nav
+      class="nav-mobile"
+      id="hamMenu"
+    >
       <button
         id="hamburger"
         class="hamburger"
         aria-expanded="false"
-        aria-label="Menu"
+        aria-label="Main menu"
         aria-controls="hamburger-menu"
       >
-        <img
+        <p>Menu</p>
+        <!-- <img
           src="./img/menu-burger-horizontal-svgrepo-com.svg"
           alt=""
           aria-hidden="true"
-        >
+        > -->
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+      <ul
+        class="ham-menu-list"
+        id="hamMenuList"
+        role="menu"
+        aria-label="Main navigation"
+        aria-hidden="true"
+      >
+        <li>
+          <a
+            class="menu-item"
+            href="./index.html"
+          >Home</a>
+        </li>
+        <li>
+          <a
+            class="menu-item"
+            href="./about.html"
+          >About Us</a>
+        </li>
+        <li> <a
+            class="menu-item nav-button"
+            href="./form.html"
+          > Join Now</a> </li>
+      </ul>
     </nav>
     <!-- desktop navigation -->
     <nav
