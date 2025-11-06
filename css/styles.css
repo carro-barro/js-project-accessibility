@@ -1,3 +1,8 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
  body {
    font-family: "Lato", sans-serif;
    color: #222;
@@ -34,7 +39,7 @@
    border: 2px solid black;
  }
 
- header {
+header {
    display: flex;
    flex-direction: row;
    background-color: #F5E5E1;
@@ -319,35 +324,44 @@
    gap: 20px;
  }
 
- .main-button,
- .secondary-button {
-   font-size: 16px;
-   font-family: "Lato", sans-serif;
-   border-radius: 50px;
-   padding: 12px 20px;
-   border: none;
-   margin-top: 20px;
-   transition: .3s ease;
- }
+.main-button,
+.secondary-button,
+.third-button {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  border-radius: 50px;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
 
- .main-button {
-   background: #427A76;
-   color: white;
- }
+.main-button {
+  background: #427a76;
+  color: white;
+}
 
- .secondary-button {
-   background: #F9B487;
-   color: #174143;
- }
+.secondary-button {
+  background: #f9b487;
+  color: #174143;
+}
 
- .main-button:hover,
- .nav-button:hover {
-   background: #30504d;
- }
+.third-button {
+  background: #174143;
+  color: #f7e9d7;
+}
 
- .secondary-button:hover {
-   background: #f7924f;
- }
+.main-button:hover,
+.nav-button:hover {
+  background: #30504d;
+}
+
+.secondary-button:hover {
+  background: #f7924f;
+}
+.third-button:hover {
+  background: #0e2324;
+}
 
  /* Books section */
  .main-books {

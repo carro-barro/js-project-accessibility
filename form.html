@@ -1,212 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <title>Join now</title>
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="css/formstyles.css"
-  />
-  <link
-    rel="stylesheet"
-    href="css/styles.css"
-  />
-
-</head>
-
-<body>
-  <header>
-    <div class="logo-container">
-      <ion-icon
-        class="logo"
-        name="book-outline"
-        size="large"
-      ></ion-icon>
-      <p>The Reading Room</p>
-    </div>
-    <!-- mobile navigation -->
-    <nav class="nav-mobile">
-      <button
-        id="hamburger"
-        class="hamburger"
-        aria-expanded="false"
-        aria-label="Menu"
-      >
-        <img
-          src="./img/menu-burger-horizontal-svgrepo-com.svg"
-          alt=""
-          aria-hidden="true"
-        >
-      </button>
-    </nav>
-    <!-- desktop navigation -->
-    <nav class="nav-desktop">
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="#About us">About Us</a>
-        </li>
-        <li> <a
-            class="nav-button"
-            href="./form.html"
-          > Join Now</a> </li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="form-container">
-    <section id="main-form">
-      <div class="become-member">
-        <h1> BECOME A BOOK CLUB MEMBER </h1>
-        <p> Join the club now to get monthly book <br> recommendations based on you favorite genre! </p>
-      </div>
-      <section id="form-info">
-        <h2> Add your info below </h2>
-        <!-- user-info-form + feedback-form -->
-        <form id="user-info-form">
-          <div class="form">
-            <label class="label-input">Name: </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-              aria-required="true"
-            />
-          </div>
-          <div class="form">
-            <label>Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-              aria-required="true"
-            />
-          </div>
-
-          <fieldset>
-            <legend class="title"> Choose your favorite genre:</legend>
-            <div class="radio-group">
-              <input
-                type="radio"
-                name="genre"
-                id="fantasy"
-                value="genre-fantasy"
-              />
-              <label for="fantasy">Fantasy</label>
-
-            </div>
-            <div class="radio-group">
-              <input
-                type="radio"
-                name="genre"
-                id="novel"
-                value="genre-novel"
-              />
-              <label for="novel">Novel</label>
-
-            </div>
-            <div class="radio-group">
-              <input
-                type="radio"
-                name="genre"
-                id="thriller"
-                value="genre-thriller"
-              />
-              <label for="thriller">Thriller</label>
-
-            </div>
-            <div class="radio-group">
-              <input
-                type="radio"
-                name="genre"
-                id="all"
-                value="genre-all"
-              />
-              <label for="all">All</label>
-            </div>
-          </fieldset>
-
-          <button
-            type="submit"
-            v
-            class="join"
-          >Join now</button>
-
-        </form>
-      </section>
-  </div>
-  <!-- result -->
-  <section
-    id="application"
-    hidden
-  >
-    <h2>Welcome to the Reading Room</h2>
-    <!-- result-content -->
-    <div id="application-note">
-    </div>
-  </section>
-
-
-
-  <footer>
-    <img
-      src="./img/1_white.png"
-      alt="logo"
-      id="logoFooter"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
     />
-    <div class="foot-contacts">
-      <h4>Contact</h4>
-      <p>City</p>
-      <p>Street 123</p>
-      <p><a href="tel:+4733378901">+47 333 78 901</a></p>
-      <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
+    <link rel="stylesheet" href="css/formstyles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <ion-icon class="logo" name="book-outline" size="large"></ion-icon>
+        <p>The Reading Room</p>
+      </div>
+      <!-- mobile navigation -->
+      <nav class="nav-mobile">
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-expanded="false"
+          aria-label="Menu"
+        >
+          <img
+            src="./img/menu-burger-horizontal-svgrepo-com.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+      </nav>
+      <!-- desktop navigation -->
+      <nav class="nav-desktop">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#About us">About Us</a>
+          </li>
+          <li><a class="nav-button" href="./form.html"> Join Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="form-container">
+      <section id="main-form">
+        <div class="become-member">
+          <h1>BECOME A BOOK CLUB MEMBER</h1>
+          <p>
+            Join the club now to get monthly book <br />
+            recommendations based on you favorite genre!
+          </p>
+        </div>
+        <section id="form-info">
+          <h2>Add your info below</h2>
+
+          <!-- user-info-form + feedback-form -->
+          <form id="user-info-form">
+            <div class="form">
+              <label class="label-input">Name: </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form">
+              <label>Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <fieldset>
+              <legend class="title">Choose your favorite genre:</legend>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="genre"
+                  id="fantasy"
+                  value="genre-fantasy"
+                />
+                <label for="fantasy">Fantasy</label>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="genre"
+                  id="novel"
+                  value="genre-novel"
+                />
+                <label for="novel">Novel</label>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="genre"
+                  id="thriller"
+                  value="genre-thriller"
+                />
+                <label for="thriller">Thriller</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" name="genre" id="all" value="genre-all" />
+                <label for="all">All</label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="join">Join now</button>
+          </form>
+        </section>
+      </section>
     </div>
-    <div class="foot-soc-media">
-      <ion-icon
-        class="foot-icon"
-        name="logo-facebook"
-      ><a href="#"></a></ion-icon>
+    <!-- result -->
+    <section id="application" hidden>
+      <h2>Welcome to the Reading Room</h2>
+      <!-- result-content -->
+      <div id="application-note"></div>
+    </section>
 
-      <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
+    <footer>
+      <img src="./img/1_white.png" alt="logo" id="logoFooter" />
+      <div class="foot-contacts">
+        <h4>Contact</h4>
+        <p>City</p>
+        <p>Street 123</p>
+        <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+        <p><a href="mailto:email@gmail.community">email@gmail.community</a></p>
+      </div>
+      <div class="foot-soc-media">
+        <ion-icon class="foot-icon" name="logo-facebook"
+          ><a href="#"></a
+        ></ion-icon>
 
-      <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
-    </div>
-  </footer>
+        <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
 
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
-  <script src="js/form.js"></script>
-</body>
+        <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
+      </div>
+    </footer>
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
