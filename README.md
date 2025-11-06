@@ -3,18 +3,19 @@
 Requirements:
 
 #Keyboard Navigation Test
+
 - The student navigates their webpage using only the keyboard, demonstrating that all interactive elements (buttons, links, form fields) are accessible.
 - Tool: Manual keyboard navigation (Tab, Enter, Spacebar, Arrow Keys).
 
 #Color Contrast Check
+
 - The student verifies their text has sufficient contrast using WebAIM’s Contrast Checker (or another tool).
 - Tool: Lighthouse or WebAIM’s Contrast Checker.
 
 #HTML & ARIA Validation
+
 - The student runs the WAVE tool to check for errors and describes how they fixed any issues.
 - Tool: WAVE Web Accessibility Tool or Lighthouse.
-
-
 
 Your website must include:
 
@@ -37,7 +38,6 @@ Implement “High contrast mode” with toggle to turn it on and off
 Implement “Text customization” with settings to change font size and line height
 Implement loading indicators with ARIA attributes
 
-
 Structure
 Header & Navigation
 A <header> with a meaningful <h1> (e.g., "Web Accessibility Homepage").
@@ -55,7 +55,8 @@ Todo:
 - add a "skip to content" link for screen readers
 - "Use :focus-visible for clear focus indicators."
 
-stuff to fix: 
+stuff to fix:
+
 - need a legend in the form
 
 figma design: https://www.figma.com/design/VlIardtfAHonAj548mu02m/Accessibility-Project-Team-6?node-id=1-69&t=SscyLpzIZVLcaj5J-0
@@ -68,3 +69,9 @@ text content:
 - "our books" section: Flexibility meets storytelling. Explore a wide range of titles you can read or listen to online, anytime and on any device. Discover a smarter, simpler way to enjoy great books.
 
 Carolina ideas: add a hamburger menu, look at accessibility tools, divide styling into diffrent files ex. "header styling", julia can do "footer styling", also "homepage styling"(for the rest of the styling on the main page)
+
+//Kittens pictures:
+Photo by <a href="https://unsplash.com/@e_d_g_a_r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edgar</a> on <a href="https://unsplash.com/photos/brown-tabby-kitten-sitting-on-floor-nKC772R_qog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@feneek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergey Semin</a> on <a href="https://unsplash.com/photos/brown-and-black-cat-on-white-background-Y0WXj3xqJz0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@antohakraev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anton Kraev</a> on <a href="https://unsplash.com/photos/close-up-photo-of-gray-tabby-cat-TuU5tODcrzU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@matthewlarkin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthew Larkin</a> on <a href="https://unsplash.com/photos/lying-orange-tabby-cat-bBHT2sePOnY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

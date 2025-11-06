@@ -1,14 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #222;
-  margin: 0;
+  background-color: #fff;
   text-decoration: none;
+  padding: 0 5%;
 }
 
-.about-people {
+header {
+  max-width: 100%;
+  margin: 40px auto 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 16px 0;
+}
+
+h1>span {
+  color: #174143;
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  h1 {
+    margin: 8px auto;
+    text-wrap: wrap;
+    font-size: 32px;
+    width: 100%;
+  }
+}
+
+/* /mobile */
+
+
+/* accordion */
+.about-text-general {
   display: flex;
-  gap: 1rem;
-  width: 100vw;
-  margin: 24px auto;
-  padding: 0;
+  flex-direction: column;
+  gap: 0;
+  text-wrap: wrap;
+  max-width: 100%;
+  margin: 16px auto;
+}
+
+.accordion-button {
+  background: none;
+  border: none;
+  color: #174143;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+/* keyboard navigation focus */
+.accordion-button:focus-visible {
+  outline: 2px solid #174143;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.accordion-content[hidden] {
+  display: none;
+}
+
+/* /keyboard navigation focus */
+
+.about-people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 100vw;
+  margin: 32px auto 64px;
+}
+
+.about-card {
+  background-color: #F5E5E1;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.about-card img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+.about-card h2 {
+  margin: 1rem 0 0.5rem;
+  color: #174143;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about-card p {
+  font-size: 1rem;
+  padding: 0 1rem;
+  color: #333;
+  text-align: justify;
+}
+
+/* Mobile, max-width 575px */
+@media (max-width: 575px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-text-general {
+    font-size: 1rem;
+  }
+
+  .about-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet, width 576px-1024px */
+@media (min-width: 576px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-people {
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop, width 1025px-1600px */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Large screen, over 1600px */
+@media (min-width: 1600px) {
+  body {
+    padding: 0 10%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .about-people {
+    gap: 2rem;
+  }
 }
