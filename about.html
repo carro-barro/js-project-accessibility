@@ -4,7 +4,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <!-- Main heading -->
+      <h1>
+        About the team behind
+        <span style="font-weight: 800">The Reading Room</span>
+      </h1>
+    </header>
+
+    <main id="about-main-content">
+      <div
+        id="accordion"
+        class="about-text-general"
+        role="region"
+        aria-label="About the team behind The Reading Room Club"
+      >
+        <p>
+          At The Reading Room, our team is made up of book lovers, discussion
+          starters, and lifelong learners who believe that stories bring people
+          together.<button
+            class="accordion-button"
+            aria-expanded="false"
+            aria-controls="content-1"
+          >
+            Read more
+          </button>
+        </p>
+        <div id="content-1" class="accordion-content" hidden role="region">
+          <p>
+            We're dedicated to creating a welcoming space where every reader can
+            share ideas, discover new voices, and feel part of a vibrant
+            community. From organizing monthly book circles to curating diverse
+            reading lists, we work together to make reading not just a hobby —
+            but a shared experience.
+          </p>
+        </div>
+      </div>
+      <section class="about-people">
+        <article class="about-card">
+          <img src="./img/anton-kraev-TuU5tODcrzU-unsplash.jpg" alt="" />
+          <h2>Agnes</h2>
+          <p>
+            Agnes started The Reading Room after realizing that her bookshelf
+            was full of great stories she had no one to talk about.
+            <button
+              class="accordion-button"
+              aria-expanded="false"
+              aria-controls="agnes-content"
+            >
+              Read more
+            </button>
+          </p>
+          <div
+            id="agnes-content"
+            class="accordion-content"
+            hidden
+            role="region"
+          >
+            <p>
+              With her love for planning and community, she turned quiet reading
+              nights into friendly gatherings where every voice is heard.
+            </p>
+          </div>
+        </article>
+        <article class="about-card">
+          <img src="./img/edgar-nKC772R_qog-unsplash.jpg" alt="" />
+          <h2>Carolina</h2>
+          <p>
+            Caro believes every book is a doorway to another world. She curates
+            the club's monthly reading themes, balancing classics with modern
+            gems,
+            <button
+              class="accordion-button"
+              aria-expanded="false"
+              aria-controls="carolina-content"
+            >
+              Read more
+            </button>
+          </p>
+          <div>
+            <p
+              id="carolina-content"
+              class="accordion-content"
+              hidden
+              role="region"
+            >
+              and never stops searching for hidden literary treasures. Her
+              favorite part? Seeing how the same story sparks completely
+              different emotions in everyone.
+            </p>
+          </div>
+        </article>
+        <article class="about-card">
+          <img src="./img/matthew-larkin-bBHT2sePOnY-unsplash.jpg" alt="" />
+          <h2>Frida</h2>
+          <p>
+            Frida brought The Reading Room to life online. With her creative
+            flair and love for color, she designed the warm, welcoming look of
+            the website
+            <button
+              class="accordion-button"
+              aria-expanded="false"
+              aria-controls="frida-content"
+            >
+              Read more
+            </button>
+          </p>
+          <div
+            id="frida-content"
+            class="accordion-content"
+            hidden
+            role="region"
+          >
+            <p>
+              — a digital extension of the cozy corner where the group first
+              met. She believes that good design can make reading feel even more
+              magical.
+            </p>
+          </div>
+        </article>
+        <article class="about-card">
+          <img src="./img/sergey-semin-Y0WXj3xqJz0-unsplash.jpg" alt="" />
+          <h2>Julia</h2>
+          <p>
+            Juls has the gift of conversation. She leads the group's
+            discussions, asks thoughtful questions, and makes sure every reader
+            feels included.
+            <button
+              class="accordion-button"
+              aria-expanded="false"
+              aria-controls="julia-content"
+            >
+              Read more
+            </button>
+          </p>
+          <div
+            id="julia-content"
+            class="accordion-content"
+            hidden
+            role="region"
+          >
+            <p>
+              For her, The Reading Room isn't just about books — it's about the
+              people who share them.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <img src="./img/1_white.png" alt="logo" id="logoFooter" />
+      <div class="foot-contacts">
+        <h4>Contact</h4>
+        <p>City</p>
+        <p>Street 123</p>
+        <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+        <p>
+          <a href="mailto:email@gmail.community">email@gmail.community</a>
+        </p>
+      </div>
+      <div class="foot-soc-media">
+        <ion-icon class="foot-icon" name="logo-facebook"
+          ><a href="#"></a
+        ></ion-icon>
+        <ion-icon name="logo-tiktok"><a href="#"></a></ion-icon>
+        <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
+      </div>
+    </footer>
+    <script src="js/about.js"></script>
+  </body>
 </html>
