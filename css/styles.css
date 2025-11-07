@@ -412,9 +412,9 @@ a {
 }
 
 .listen-button {
-  background-color: #FCD7B7;
-  color: #426A5A;
-  border: 1px solid #426A5A;
+  background-color: #f9b487;
+  color: #174143;
+  border: none;
   padding: 12px 20px;
   border-radius: 50px;
   margin: 4px 0;
@@ -425,7 +425,7 @@ a {
 
 
 .read-button {
-  background-color: #426A5A;
+  background-color: #174143;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -437,7 +437,7 @@ a {
 }
 
 .listen-button:hover {
-  background-color: #ffb472;
+  background-color: #f7924f;
 }
 
 .read-button:hover {
@@ -465,7 +465,6 @@ footer {
 .foot-contacts {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   font-size: 1rem;
 }
 
