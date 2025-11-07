@@ -47,13 +47,14 @@
     <nav
       class="nav-mobile"
       id="hamMenu"
+      aria-label="Main navigation"
     >
       <button
         id="hamburger"
         class="hamburger"
         aria-expanded="false"
         aria-label="Main menu"
-        aria-controls="hamburger-menu"
+        aria-controls="hamMenuList"
       >
         <p>Menu</p>
         <span aria-hidden="true"></span>
@@ -63,7 +64,6 @@
       <ul
         class="ham-menu-list"
         id="hamMenuList"
-        role="menu"
         aria-label="Main navigation"
         aria-hidden="true"
       >
@@ -105,7 +105,10 @@
       </ul>
     </nav>
   </header>
-  <main id="main-content">
+  <main
+    id="main-content"
+    role="main"
+  >
     <!-- 
   CHANGE: Replaced the non-semantic <hero> element with <section class="hero">
   because <hero> is not a valid HTML tag. <section> is a semantic element,
@@ -133,7 +136,7 @@
         </p>
         <div class="hero-buttons">
           <a
-            href="./form.html"
+            href="form.html"
             class="main-button"
             id="join-now"
             aria-label="click to go to sign up page"
@@ -208,13 +211,23 @@
   </main>
 
   <footer>
-    <img
+    <!--  <img
       src="./img/1_white.png"
-      alt="logo"
+      alt="logotype of the Readinig Room Club with an open book and the name of the club under it"
       id="logoFooter"
-    />
+    /> -->
+    <div class="logo-container">
+      <a href="index.html">
+        <ion-icon
+          class="logo"
+          name="book-outline"
+          size="large"
+          aria-label="Website logotype, press to go to the Home page"
+        ></ion-icon>The Reading Room
+      </a>
+    </div>
     <div class="foot-contacts">
-      <h4>Contact</h4>
+      <h3>Contact</h3>
       <p>City</p>
       <p>Street 123</p>
       <a href="tel:+4733378901">+47 333 78 901</a>

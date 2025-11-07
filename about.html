@@ -53,13 +53,14 @@
     <nav
       class="nav-mobile"
       id="hamMenu"
+      aria-label="Main navigation"
     >
       <button
         id="hamburger"
         class="hamburger"
         aria-expanded="false"
         aria-label="Main menu"
-        aria-controls="hamburger-menu"
+        aria-controls="hamMenuList"
       >
         <p>Menu</p>
         <span aria-hidden="true"></span>
@@ -69,7 +70,6 @@
       <ul
         class="ham-menu-list"
         id="hamMenuList"
-        role="menu"
         aria-label="Main navigation"
         aria-hidden="true"
       >
@@ -87,7 +87,7 @@
         </li>
         <li> <a
             class="menu-item nav-button"
-            href="./form.html"
+            href="form.html"
           > Join Now</a> </li>
       </ul>
     </nav>
@@ -99,20 +99,23 @@
     >
       <ul>
         <li>
-          <a href="./index.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="./about.html">About Us</a>
+          <a href="about.html">About Us</a>
         </li>
         <li> <a
             class="nav-button"
-            href="./form.html"
+            href="form.html"
           > Join Now</a> </li>
       </ul>
     </nav>
   </header>
 
-  <main id="about-main-content">
+  <main
+    id="about-main-content"
+    role="main"
+  >
     <h1>
       About the team behind
       <span style="font-weight: 800">The Reading Room</span>
@@ -122,6 +125,7 @@
       class="about-text-general"
       role="region"
       aria-label="About the team behind The Reading Room Club"
+      aria-live="polite"
     >
       <p>
         At The Reading Room, our team is made up of book lovers, discussion
@@ -274,13 +278,23 @@
     </section>
   </main>
   <footer>
-    <img
+    <!--    <img
       src="./img/1_white.png"
-      alt="logo"
+      alt="logotype of the Readinig Room Club with an open book and the name of the club under it"
       id="logoFooter"
-    />
+    /> -->
+    <div class="logo-container">
+      <a href="index.html">
+        <ion-icon
+          class="logo"
+          name="book-outline"
+          size="large"
+          aria-label="Website logotype, press to go to the Home page"
+        ></ion-icon>The Reading Room
+      </a>
+    </div>
     <div class="foot-contacts">
-      <h4>Contact</h4>
+      <h3>Contact</h3>
       <p>City</p>
       <p>Street 123</p>
       <a href="tel:+4733378901">+47 333 78 901</a>

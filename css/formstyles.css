@@ -81,6 +81,10 @@ h2 {
 
 fieldset {
   border: none;
+}
+
+.fieldset-radio {
+  border: none;
   margin-top: 40px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -88,7 +92,7 @@ fieldset {
 }
 
 .join {
-  background: #427a76;
+  background: #174143;
   color: white;
   width: 80%;
   padding: 8px;
@@ -97,6 +101,10 @@ fieldset {
   margin: 40px auto 20px auto;
   border: none;
   transition: transform 0.2s ease;
+}
+
+.join:hover {
+  background-color: #30504d;
 }
 
 .join:focus,
