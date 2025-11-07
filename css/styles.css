@@ -287,7 +287,7 @@ a {
   border-radius: 50px;
   padding: 12px 20px;
   border: none;
-  background: #427A76;
+  background: #174143;
   color: white;
   transition: .3s ease;
 }
@@ -329,7 +329,7 @@ a {
 }
 
 .main-button {
-  background: #427a76;
+  background: #174143;
   color: white;
 }
 
@@ -339,8 +339,9 @@ a {
 }
 
 .third-button {
-  background: #174143;
-  color: white;
+  background: #fff;
+  color: #174143;
+  border: 2px solid #174143
 }
 
 .main-button:hover,
@@ -353,7 +354,8 @@ a {
 }
 
 .third-button:hover {
-  background: #0e2324;
+  background: #f7924f;
+  color: #174143;
 }
 
 /* Books section */
@@ -412,9 +414,9 @@ a {
 }
 
 .listen-button {
-  background-color: #FCD7B7;
-  color: #426A5A;
-  border: 1px solid #426A5A;
+  background-color: #f9b487;
+  color: #174143;
+  border: none;
   padding: 12px 20px;
   border-radius: 50px;
   margin: 4px 0;
@@ -425,7 +427,7 @@ a {
 
 
 .read-button {
-  background-color: #426A5A;
+  background-color: #174143;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -437,12 +439,12 @@ a {
 }
 
 .listen-button:hover {
-  background-color: #ffb472;
+  background-color: #f7924f;
 }
 
 .read-button:hover {
-  background-color: #6faf6d;
-  color: #2a3d35;
+  background-color: #30504d;
+  color: #fff;
 }
 
 /* Footer */
@@ -450,7 +452,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  background-color: #426A5A;
+  background-color: #174143;
   color: #fff;
   padding: 40px 5%;
   flex-wrap: wrap;
@@ -460,13 +462,21 @@ footer {
 #logoFooter {
   height: 15vh;
   width: auto;
+  padding: 0;
+  margin: 0;
 }
 
 .foot-contacts {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   font-size: 1rem;
+}
+
+footer h3,
+footer p {
+  padding-bottom: 0;
+  margin: 0;
 }
 
 footer a {
