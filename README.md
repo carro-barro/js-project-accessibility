@@ -1,5 +1,7 @@
 # Web Accessibility Project
 
+netlify: https://the-reading-room-accesibility-project.netlify.app/
+
 Requirements:
 
 #Keyboard Navigation Test
@@ -54,8 +56,6 @@ Todo:
 
 - add a "skip to content" link for screen readers
 - "Use :focus-visible for clear focus indicators."
-
-*****stuff to fix: 
 - trap on hamburger menu, and fix so it doesn't read the stuff on the main page before the ham menu is closed
 
 figma design: https://www.figma.com/design/VlIardtfAHonAj548mu02m/Accessibility-Project-Team-6?node-id=1-69&t=SscyLpzIZVLcaj5J-0
